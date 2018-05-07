@@ -17,3 +17,6 @@ hpc$Date <- as.Date(hpc$Date, format="%d/%m/%Y")
 
 hist(hpc$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
+#save the .png file
+png("plot1.png", width=480, height=480)
+dev.off()

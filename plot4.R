@@ -25,3 +25,7 @@ with(hpc, {
   plot(Global_reactive_power~Datetime, type="l", 
        ylab="Global Rective Power (kilowatts)",xlab="")
 })
+
+# save the .png file
+png("plot4.png", width=480, height=480)
+dev.off()
